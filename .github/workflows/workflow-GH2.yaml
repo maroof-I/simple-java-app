@@ -4,7 +4,7 @@ on:
         types: [test]
 
 jobs:
-    first job:
+    first-job:
         name: first job workflow
         runs-on: ubuntu-latest
         steps:
