@@ -1,0 +1,14 @@
+name: triggering outside events
+on:
+    repository_dispatch:
+        types: [test]
+
+jobs:
+    first job:
+        name: first job workflow
+        runs-on: ubuntu-latest
+        steps:
+        -
+            name: testing with postman
+            run: echo "i have been triggered"
+            shell: bash
