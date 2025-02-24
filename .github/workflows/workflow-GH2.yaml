@@ -16,6 +16,9 @@ jobs:
         if: github.event.inputs.log == 'push'
         steps:
         -
+            name: checkout repo
+            uses: actions/checkout@v4
+        -
             name: triggering
             run: echo "i have been triggered"
             shell: bash
