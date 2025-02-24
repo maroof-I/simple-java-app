@@ -13,7 +13,7 @@ jobs:
     first-job:
         name: first job workflow
         runs-on: ubuntu-latest
-        if github.event.inputs.log == 'push'
+        if: github.event.inputs.log == 'push'
         steps:
         -
             name: triggering
